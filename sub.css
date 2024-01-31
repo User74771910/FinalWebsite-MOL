@@ -1,0 +1,254 @@
+.container{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100%;
+    width: 100%;
+}
+#Header{
+    grid-column: 1/11;
+    grid-row: 1;
+    background-color: black;
+}
+#Title{
+    margin-top: 60px;
+    text-align: center;
+    color: red;
+}
+#Nav{
+    text-align: center;
+}
+.a{
+    display: inline;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.a:hover{
+    background-color: red;
+}
+.holder{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column: 1/11;
+    grid-row: 2/3;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: scroll 100s linear infinite;
+    height: auto;
+}
+
+.slider img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+}
+/* Your existing styles... */
+#whatsapp{
+    background-color: green;
+    border-radius: 50%;
+}
+#instagram{
+    background-color:  #e4405f;
+    border-radius: 50%;
+}
+#tiktok{
+    background-color: #dbd6d6;
+    border-radius: 50%;
+}
+#facebook{
+    background-color: #365492;
+    border-radius: 50%;
+}
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service-item {
+    flex: 0 0 calc(30% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.service-item p {
+    color: #666;
+}
+
+#h-Image{
+    width: 70px;
+    height: 100px;
+}
+.hr{
+    color: rgb(156, 135, 84);
+}
+#Body{
+    grid-row: 3/10;
+    grid-column: 1/11;
+    background-color: black;
+    color: white;
+    padding: 20px;
+} 
+.SubInfor{
+    text-align: center;
+   
+}
+#Body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#AddServices {
+    background-color: black;
+    padding: 10px;
+    border: 1px dashed  rgb(139, 111, 38);
+}
+#AddServices2{
+    background-color: black;
+    padding: 10px;
+    border: 1px dashed  rgb(139, 111, 38);
+}
+#AddServices3{
+    background-color: black;
+    padding: 10px;
+    border: 1px dashed  rgb(139, 111, 38);
+}
+
+.h1-1{
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #030303, #ff0000);
+}
+#Info{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+#pSub{
+    text-align: center;
+    font-weight: bold;
+}
+#Footer{
+    grid-row: 10;
+    grid-column: 1/11;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top: 2px solid rgb(139, 111, 38);
+    font-family: cursive;
+}
+#FooterContact{
+    text-decoration: white underline;
+}
+#myButton{
+    /* position: absolute; */
+    background-color: red;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+.Body {
+    text-align: center; /* Center-align the content within the Body */
+}
+#myQ{
+    font-style: italic;
+}
+.Image {
+    display: block;
+    margin: 0 auto; /* Set left and right margins to 'auto' for center alignment */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
+button:active{
+    transform: scale(0.96);
+}
+@media (max-width: 600px) {
+  nav {
+    padding: 5px; /* Adjust padding to fit better on smaller screens */
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+  }
+}
+.featured-performances {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonial-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    background-color: #030303;
+    border-radius: 5px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
